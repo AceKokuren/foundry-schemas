@@ -12,7 +12,7 @@
       "description": "The module has been verified to be compatible up to this version."
     },
     "maximum": {
-      "type": "The module will not function for newer versions than this.",
+      "type": "string",
       "description": "The module will not function for newer versions than this."
     }
   }
