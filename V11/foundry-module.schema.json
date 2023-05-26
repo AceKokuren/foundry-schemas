@@ -3,7 +3,11 @@
   "$id": "",
   "title": "Schema for module.json properties.",
   "type": "object",
-  "allOf": [{"$ref": "./foundry-base-package.schema.json"}],
+  "allOf": [
+    {
+      "$ref": "./foundry-base-package.schema.json"
+    }
+  ],
   "properties": {
     "packs": {
       "type": "array",
@@ -11,23 +15,32 @@
       "items": {
         "type": "object",
         "properties": {
-          "name": {
-            "type": "string",
-            "label": "string",
-            "system": "string",
-            "path": "string",
-            "item": "string"
+          "id": {
+            "type": "string"
+          },
+          "label": {
+            "type": "string"
+          },
+          "system": {
+            "type": "string"
+          },
+          "path": {
+            "type": "string"
+          },
+          "item": {
+           "type": "string"
           }
-        },
-        "required": [
-          "type",
-          "system",
-          "path",
-          "item"
-        ]
+        }
       },
-      "minItems": 1,
-      "uniqueItems": true
-    }
+      "required": [
+        "type",
+        "system",
+        "path",
+        "item"
+      ]
+    },
+    "minItems": 1,
+    "uniqueItems": true
   }
+}
 }
