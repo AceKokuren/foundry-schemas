@@ -36,21 +36,24 @@
           "items": {
             "type": "object",
             "$ref": "../common-schemas/relationships.schema.json"
-          }
+          },
+          "minItems": 1
         },
         "requires": {
           "type": "array",
           "items": {
             "type": "object",
             "$ref": "../common-schemas/relationships.schema.json"
-          }
+          },
+          "minItems": 1
         },
         "recommends": {
           "type": "array",
           "items": {
             "type": "object",
             "$ref": "../common-schemas/relationships.schema.json"
-          }
+          },
+          "minItems": 1
         }
       }
     }
