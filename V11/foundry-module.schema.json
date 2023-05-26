@@ -28,19 +28,21 @@
             "type": "string"
           },
           "item": {
-           "type": "string"
+            "type": "string"
+          },
+          "type": {
+            "type": "string"
           }
-        }
+        },
+        "uniqueItems": true,
+        "required": [
+          "type",
+          "system",
+          "path",
+          "item"
+        ]
       },
-      "required": [
-        "type",
-        "system",
-        "path",
-        "item"
-      ]
-    },
-    "minItems": 1,
-    "uniqueItems": true
+      "minItems": 1
+    }
   }
-}
 }
