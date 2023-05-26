@@ -18,22 +18,8 @@
       "description": "This field can contain a more lengthy description of the module. This text can be used to describe the functionality, list contact information, provide recommendations to contributors or testers, or any other information you feel is important to provide. This field can contain HTML to structure and style your text."
     },
     "authors": {
-      "type": "array",
-      "items": {
-        "type": "object",
-        "properties": {
-          "name": {
-            "type": "string",
-            "description": "Name of the author of the module."
-          },
-          "email": {
-            "type": "string"
-          },
-          "url": {
-            "type": "string"
-          }
-        }
-      }
+      "$ref": "../common-schemas/authors.schema.json",
+      "description": "An array of authors that are identified by ID. Can also optionally add an email and url."
     },
     "version": {
       "type": "string",
