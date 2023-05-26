@@ -13,12 +13,13 @@
         "module",
         "world"
       ]
+    },
+    "manifest": {
+      "type": "string"
+    },
+    "compatibility": {
+      "$ref": "../common-schemas/compatibility.schema.json"
     }
   },
-  "manifest": {
-    "type": "string"
-  },
-  "compatibility": {
-    "$ref": "../common-schemas/compatibility.schema.json"
-  }
+  "required": ["id"]
 }
