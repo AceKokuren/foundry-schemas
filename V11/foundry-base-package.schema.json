@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/AceKokuren/module_schema/main/foundry-module.schema.json",
+  "title": "Base Package Schema For Foundry",
+  "description": "JSON Schema for the  module.json file required for Foundry package development",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Choose a unique module identifier. This must be an all lower-case string with no special characters and should use hyphens (not underscores) to separate multiple terms. This name must match exactly with the name of your module directory."
+    },
+    "title": {
+      "type": "string",
+      "description": "Provide a human readable title for the module which is displayed as the visible name for the module in the Setup menu and elsewhere."
+    },
+    "description": {
+      "type": "string",
+      "description": "This field can contain a more lengthy description of the module. This text can be used to describe the functionality, list contact information, provide recommendations to contributors or testers, or any other information you feel is important to provide. This field can contain HTML to structure and style your text."
+    },
+    "authors": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Name of the author of the module."
+          },
+          "email": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "version": {
+      "type": "string",
+      "description": "The module version number can be a number or a string which denotes the version of your module. When making changes to your module, incrementing the version number in your manifest file is used to signal to users that an update is available. We discuss some supported options for versioning in the Introduction to Development article."
+    },
+    "compatibility": {
+      "$ref": "../common-schemas/compatibility.schema.json"
+    }
+  },
+  "required": [
+    "id",
+    "title",
+    "description",
+    "version"
+  ]
+}
