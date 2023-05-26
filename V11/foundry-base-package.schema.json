@@ -27,6 +27,32 @@
     },
     "compatibility": {
       "$ref": "../common-schemas/compatibility.schema.json"
+    },
+    "relationships": {
+      "type": "object",
+      "properties": {
+        "systems": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "$ref": "../common-schemas/relationships.schema.json"
+          }
+        },
+        "requires": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "$ref": "../common-schemas/relationships.schema.json"
+          }
+        },
+        "recommends": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "$ref": "../common-schemas/relationships.schema.json"
+          }
+        }
+      }
     }
   },
   "required": [
