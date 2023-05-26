@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "system",
+        "module",
+        "world"
+      ]
+    }
+  },
+  "manifest": {
+    "type": "string"
+  },
+  "compatibility": {
+    "$ref": "../common-schemas/compatibility.schema.json"
+  }
+}
