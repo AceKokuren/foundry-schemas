@@ -14,10 +14,7 @@
       "url": {
         "type": "string"
       }
-    },
-    "required": [
-      "id"
-    ]
+    }
   },
   "minItems": 1
 }
