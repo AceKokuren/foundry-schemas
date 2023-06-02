@@ -4,7 +4,8 @@
   "type": "object",
   "properties": {
     "id": {
-      "type": "string"
+      "type": "string",
+      "description": "Dependency entries require the id attribute. If only an id is provided, additional details about the module will be discovered from the Foundry VTT website listing."
     },
     "type": {
       "type": "string",
@@ -18,8 +19,10 @@
       "type": "string"
     },
     "compatibility": {
-      "$ref": "../common-schemas/compatibility.schema.json"
+      "$ref": "compatibility.schema.json"
     }
   },
-  "required": ["id"]
+  "required": [
+    "id"
+  ]
 }

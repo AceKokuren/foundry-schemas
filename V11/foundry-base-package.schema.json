@@ -29,33 +29,7 @@
       "$ref": "../common-schemas/compatibility.schema.json"
     },
     "relationships": {
-      "type": "object",
-      "properties": {
-        "systems": {
-          "type": "array",
-          "items": {
-            "type": "object",
-            "$ref": "../common-schemas/relationships.schema.json"
-          },
-          "minItems": 1
-        },
-        "requires": {
-          "type": "array",
-          "items": {
-            "type": "object",
-            "$ref": "../common-schemas/relationships.schema.json"
-          },
-          "minItems": 1
-        },
-        "recommends": {
-          "type": "array",
-          "items": {
-            "type": "object",
-            "$ref": "../common-schemas/relationships.schema.json"
-          },
-          "minItems": 1
-        }
-      }
+      "$ref": "../common-schemas/relationship-types.schema.json"
     }
   },
   "required": [
