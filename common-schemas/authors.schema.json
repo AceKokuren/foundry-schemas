@@ -2,6 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "",
   "type": "array",
+  "description": "An array listing each author as an object that can contain the keys name, email, and url.",
   "items": {
     "type": "object",
     "properties": {
