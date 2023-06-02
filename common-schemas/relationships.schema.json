@@ -13,7 +13,8 @@
         "system",
         "module",
         "world"
-      ]
+      ],
+      "description": "The type attribute instructs FVTT that the dependency may be on a different type of package. By default dependencies are assumed to be a module, so if you want to depend on a system or world you should be explicit."
     },
     "manifest": {
       "type": "string"
