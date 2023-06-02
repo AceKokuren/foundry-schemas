@@ -1,26 +1,31 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "",
-  "description": "",
+  "description": "For creating folders inside foundry to store compendium packs defined in the package json file.",
   "type": "object",
   "properties": {
     "name": {
-      "type": "string"
+      "type": "string",
+      "description": "The name of the folder to create."
     },
     "sorting": {
       "type": "string",
+      "description": "A single letter code to declare to sort Alphabetically: a, or Manually: m",
       "enum": [
         "m",
         "a"
       ]
     },
     "color": {
-      "type": "string"
+      "type": "string",
+      "description": "The RGB hash value of the color you want to set the folders to."
     },
     "packs": {
       "type": "array",
+      "description": "An array of packs declared in the package json that are to be stored in this folder.",
       "items": {
-        "type": "string"
+        "type": "string",
+        "description": "The unique identifying name of the pack to be stored inside the folder."
       }
     }
   }
