@@ -9,40 +9,6 @@
     }
   ],
   "properties": {
-    "packs": {
-      "type": "array",
-      "description": "Modules may come bundled with Compendium packs which include game content for various Document types. Compendium packs are defined as objects which have their own internal metadata structure.",
-      "items": {
-        "type": "object",
-        "properties": {
-          "id": {
-            "type": "string"
-          },
-          "label": {
-            "type": "string"
-          },
-          "system": {
-            "type": "string"
-          },
-          "path": {
-            "type": "string"
-          },
-          "item": {
-            "type": "string"
-          },
-          "type": {
-            "type": "string"
-          }
-        },
-        "uniqueItems": true,
-        "required": [
-          "type",
-          "system",
-          "path",
-          "item"
-        ]
-      },
-      "minItems": 1
-    }
+
   }
 }
