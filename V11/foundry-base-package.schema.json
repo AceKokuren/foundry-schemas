@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://raw.githubusercontent.com/AceKokuren/module_schema/main/foundry-module.schema.json",
+  "$id": "https://raw.githubusercontent.com/AceKokuren/foundry-schemas/main/V11/foundry-base-package.schema.json",
   "title": "Base Package Schema For Foundry",
   "description": "JSON Schema for the  module.json file required for Foundry package development",
   "type": "object",
@@ -77,19 +77,19 @@
       "minItems": 1
     },
     "authors": {
-      "$ref": "../common-schemas/authors.schema.json"
+      "$ref": "https://raw.githubusercontent.com/AceKokuren/foundry-schemas/main/common-schemas/authors.schema.json"
     },
     "compatibility": {
-      "$ref": "../common-schemas/compatibility.schema.json"
+      "$ref": "https://raw.githubusercontent.com/AceKokuren/foundry-schemas/main/common-schemas/compatibility.schema.json"
     },
     "languages": {
-      "$ref": "../common-schemas/languages.schema.json"
+      "$ref": "https://raw.githubusercontent.com/AceKokuren/foundry-schemas/main/common-schemas/languages.schema.json"
     },
     "packs": {
-      "$ref": "../common-schemas/packs.schema.json"
+      "$ref": "https://raw.githubusercontent.com/AceKokuren/foundry-schemas/main/common-schemas/packs.schema.json"
     },
     "relationships": {
-      "$ref": "../common-schemas/relationship-types.schema.json"
+      "$ref": "https://raw.githubusercontent.com/AceKokuren/foundry-schemas/main/common-schemas/relationships.schema.json"
     },
     "packFolders": {
       "$ref": "packFolders.schema.json"

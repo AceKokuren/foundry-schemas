@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "",
+  "$id": "https://raw.githubusercontent.com/AceKokuren/foundry-schemas/main/common-schemas/languages.schema.json",
   "description": "You may designate an array of languages specifications that the package supports by default. Each element in the languages array is an object which defines the language tag, label, and path to its localization file.",
   "properties": {
     "type": "object",
