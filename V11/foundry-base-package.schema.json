@@ -29,33 +29,11 @@
       "$ref": "../common-schemas/compatibility.schema.json"
     },
     "relationships": {
-      "type": "object",
-      "properties": {
-        "systems": {
-          "type": "array",
-          "items": {
-            "type": "object",
-            "$ref": "../common-schemas/relationships.schema.json"
-          },
-          "minItems": 1
-        },
-        "requires": {
-          "type": "array",
-          "items": {
-            "type": "object",
-            "$ref": "../common-schemas/relationships.schema.json"
-          },
-          "minItems": 1
-        },
-        "recommends": {
-          "type": "array",
-          "items": {
-            "type": "object",
-            "$ref": "../common-schemas/relationships.schema.json"
-          },
-          "minItems": 1
-        }
-      }
+      "$ref": "../common-schemas/relationship-types.schema.json"
+    },
+    "languages": {
+      "$ref": "../common-schemas/languages.schema.json",
+      "description": "You may designate an array of languages specifications that the module or system supports by default. Each element in the languages array is an object which defines the language tag, label, and path to its localization file."
     }
   },
   "required": [

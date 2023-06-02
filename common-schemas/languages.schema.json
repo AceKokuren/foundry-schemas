@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "",
+  "properties": {
+    "type": "object",
+    "lang": {
+      "type": "string",
+      "description": "The official 2-character language code in lower-case letters, for example \"en\".",
+      "maxLength": 2
+    },
+    "name": {
+      "type": "string",
+      "description": "The formal and readable name for the language, for example \"English\"."
+    },
+    "path": {
+      "type": "string",
+      "description": "Path to a JSON file relative to the system directory where language translation strings are provided."
+    }
+  }
+}
