@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "",
+  "type": "object",
+  "properties": {
+    "minimum": {
+      "type": "string",
+      "description": "The module will not function for versions earlier than this."
+    },
+    "verified": {
+      "type": "string",
+      "description": "The module has been verified to be compatible up to this version."
+    },
+    "maximum": {
+      "type": "string",
+      "description": "The module will not function for newer versions than this."
+    }
+  }
+}

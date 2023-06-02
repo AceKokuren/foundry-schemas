@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "",
+  "title": "Schema for system.json properties.",
+  "type": "object",
+  "allOf": [
+    {
+      "$ref": "./foundry-base-package.schema.json"
+    }
+  ],
+  "properties": {
+    "initiative": {
+      "type": "string",
+      "description": "Not every game system uses the concept of initiative, but this field provides the default dice rolling formula that can be used to determine the turn order of Tokens within the combat tracker."
+    },
+    "gridDistance": {
+      "type": "string",
+      "description": "This field designates the default amount of distance that a single grid space should typically represent under this game system. This value configures the default value used when a new Scene is created, but can always be changed for each Scene independently."
+    },
+    "gridUnits": {
+      "type": "string",
+      "description": "This field designates the standard unit of measure used to describe distances under this game system. This defines the default value used when new a new Scene is created, but can always be changed for each Scene independently."
+    },
+    "primaryTokenAttribute": {
+      "type": "string",
+      "description": "An attribute path within the system data model that points to an object that contains both a value and max key. The prototype Token for each Actor created in this system will automatically have this resource assigned as it's primary bar. Omit this key or set it to null for no default attribute."
+    },
+    "secondaryTokenAttribute": {
+      "type": "string",
+      "description": "An attribute path within the system data model that points to an object that contains both a value and max key. The prototype Token for each Actor created in this system will automatically have this resource assigned as it's secondary bar. Omit this key or set it to null for no default attribute."
+    }
+  }
+}

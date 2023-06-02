@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Dependency entries require the id attribute. If only an id is provided, additional details about the module will be discovered from the Foundry VTT website listing."
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "system",
+        "module",
+        "world"
+      ],
+      "description": "The type attribute instructs FVTT that the dependency may be on a different type of package. By default dependencies are assumed to be a module, so if you want to depend on a system or world you should be explicit. Systems are not able to be dependant on another system."
+    },
+    "manifest": {
+      "type": "string"
+    },
+    "compatibility": {
+      "$ref": "compatibility.schema.json"
+    }
+  },
+  "required": [
+    "id"
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "",
+  "type": "array",
+  "description": "An array of folders you wish to create to store compendium packs in. Each folder can contain 3 subdirectories, each with their own configuration and packs declared.",
+  "items": {
+    "type": "object",
+    "$ref": "folders.schema.json",
+    "properties": {
+      "folders": {
+        "type": "array",
+        "description": "An nested folder object that declares the makeup of the nested folder.",
+        "items": {
+          "type": "object",
+          "$ref": "folders.schema.json",
+          "properties": {
+            "folders": {
+              "type": "array",
+              "description": "An nested folder object that declares the makeup of the nested folder.",
+              "items": {
+                "type": "object",
+                "$ref": "folders.schema.json",
+                "properties": {
+                  "folders": {
+                    "type": "array",
+                    "description": "An nested folder object that declares the makeup of the nested folder.",
+                    "items": {
+                      "type": "object",
+                      "$ref": "folders.schema.json"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

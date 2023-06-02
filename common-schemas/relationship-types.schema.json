@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "",
+  "type": "object",
+  "description": "Packages can require other modules, systems, or worlds be installed to allow their use. If a package has been installed with dependencies, but its dependencies are missing, it cannot be enabled.",
+  "properties": {
+    "systems": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "$ref": "relationships.schema.json"
+      },
+      "minItems": 1
+    },
+    "requires": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "$ref": "relationships.schema.json"
+      },
+      "minItems": 1
+    },
+    "recommends": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "$ref": "relationships.schema.json"
+      },
+      "minItems": 1
+    }
+  }
+}
