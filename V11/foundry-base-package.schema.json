@@ -30,6 +30,10 @@
     },
     "relationships": {
       "$ref": "../common-schemas/relationship-types.schema.json"
+    },
+    "languages": {
+      "$ref": "../common-schemas/languages.schema.json",
+      "description": "You may designate an array of languages specifications that the module or system supports by default. Each element in the languages array is an object which defines the language tag, label, and path to its localization file."
     }
   },
   "required": [
