@@ -5,5 +5,7 @@
   "items": {
     "type": "string",
     "description": "The preferred method for including Javascript with your project. This field allows you to define an array of JS files which use the newer ES6 modules specification. As with scripts>, this should be declared as an array. These files are identified separately in the manifest so they may be correctly loaded as a module rather than a script."
-  }
+  },
+  "uniqueItems": true,
+  "minItems": 1
 }
