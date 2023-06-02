@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "",
+  "$id": "https://raw.githubusercontent.com/AceKokuren/foundry-schemas/main/V11/packFolders.schema.json",
   "type": "array",
   "description": "An array of folders you wish to create to store compendium packs in. Each folder can contain 3 subdirectories, each with their own configuration and packs declared.",
   "items": {

@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "",
+  "$id": "https://raw.githubusercontent.com/AceKokuren/foundry-schemas/main/V10/foundry-system.schema.json",
   "title": "Schema for system.json properties.",
   "type": "object",
   "allOf": [
