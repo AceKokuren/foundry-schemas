@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "",
+  "description": "",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "sorting": {
+      "type": "string",
+      "enum": [
+        "m",
+        "a"
+      ]
+    },
+    "color": {
+      "type": "string"
+    },
+    "packs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

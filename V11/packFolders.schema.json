@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "$ref": "folders.schema.json",
+    "properties": {
+      "folders": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "$ref": "folders.schema.json",
+          "properties": {
+            "folders": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "$ref": "folders.schema.json",
+                "properties": {
+                  "folders": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "$ref": "folders.schema.json"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
