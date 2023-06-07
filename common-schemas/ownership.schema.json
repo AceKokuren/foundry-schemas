@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "",
+  "type": "object",
+  "description": "For V11 packages only! Configures the ownership properties of the compendium pack",
+  "properties": {
+    "PLAYER": {
+      "type": "string",
+      "enum": [
+        "LIMITED",
+        "OBSERVER",
+        "OWNER"
+      ]
+    },
+    "TRUSTED": {
+      "type": "string",
+      "enum": [
+        "LIMITED",
+        "OBSERVER",
+        "OWNER"
+      ]
+    },
+    "ASSISTANT": {
+      "type": "string",
+      "enum": [
+        "LIMITED",
+        "OBSERVER",
+        "OWNER"
+      ]
+    }
+  }
+}
