@@ -5,7 +5,7 @@
   "type": "object",
   "allOf": [
     {
-      "$ref": "./foundry-base-package.schema.json"
+      "$ref": "https://raw.githubusercontent.com/AceKokuren/foundry-schemas/main/V11/foundry-base-package.schema.json"
     }
   ],
   "properties": {
