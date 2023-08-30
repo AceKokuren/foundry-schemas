@@ -89,7 +89,7 @@
       "$ref": "https://raw.githubusercontent.com/AceKokuren/foundry-schemas/main/common-schemas/packs.schema.json"
     },
     "relationships": {
-      "$ref": "https://raw.githubusercontent.com/AceKokuren/foundry-schemas/main/common-schemas/relationships.schema.json"
+      "$ref": "https://raw.githubusercontent.com/AceKokuren/foundry-schemas/main/common-schemas/relationship-types.schema.json"
     }
   },
   "required": [
